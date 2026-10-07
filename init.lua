@@ -1,0 +1,8 @@
+require("config.options")
+require("config.lazy")
+require("config.keymaps")
+require("config.autocmds")
+require("config.lsp")
+
+vim.cmd.packadd({ "nvim.undotree" })
+
