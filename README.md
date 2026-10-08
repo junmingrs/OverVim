@@ -34,10 +34,8 @@ scoop install main/neovim
 ```
 
 ### git
-
-```powershell
-scoop install main/git
-```
+You should already have git installed
+If not, install it from [Git website](https://git-scm.com/install/windows)
 
 ### ripgrep and fd
 
