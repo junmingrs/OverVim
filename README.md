@@ -100,4 +100,8 @@ cargo --version
 ```
 
 Make sure all the required packages shows a version (proof it has been installed)
-
+Run 
+```powershell
+git clone https://github.com/junmingrs/OverVim $env:LOCALAPPDATA\nvim
+```
+and you're all set!
