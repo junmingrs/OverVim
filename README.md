@@ -1,6 +1,6 @@
-# nvim-overvim
+# OverVim
 
-Personal Neovim configuration.
+Neovim config for Overflow workshop
 
 ## System prerequisites
 
