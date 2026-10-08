@@ -19,28 +19,31 @@ Personal Neovim configuration.
 
 ## Installation (Windows)
 
-The easiest route is [winget](https://learn.microsoft.com/windows/package-manager/winget/)
-(built into Windows 11 and recent Windows 10). Run these in a PowerShell or
-Windows Terminal with admin rights where noted. `scoop`/`choco` equivalents are
-listed as alternatives.
+Using Scoop package manager [Scoop](https://scoop.sh/#/)
+Install scoop using Powershell in Terminal
+```powershell
+Set-ExecutionPolicy -ExecutionPolicy RemoteSigned -Scope CurrentUser
+Invoke-RestMethod -Uri https://get.scoop.sh | Invoke-Expression
+```
+Restart Terminal after installing Scoop
 
 ### Neovim ≥ 0.11
 
 ```powershell
-winget install --id Neovim.Neovim
+scoop install main/neovim
 ```
 
 ### git
 
 ```powershell
-winget install --id Git.Git
+scoop install main/git
 ```
 
 ### ripgrep and fd
 
 ```powershell
-winget install --id BurntSushi.ripgrep.MSVC
-winget install --id sharkdp.fd
+scoop install main/ripgrep
+scoop install main/fd
 ```
 
 ### Node.js / npm
@@ -54,6 +57,10 @@ https://docs.npmjs.com/cli/v12/configuring-npm/install
 // WINDOWS HAS "Visual Studio Installer which should have gcc"
 ### C compiler (`gcc`/`cc`) + `make` 
 
+```powershell
+scoop install main/gcc
+scoop install main/make
+```
 
 ### Tree-sitter CLI
 
@@ -87,9 +94,12 @@ node --version
 gcc --version
 make --version
 tree-sitter --version
+```
+
+### Optional Verify
+```
 cargo --version
 ```
 
-Make sure Neovim ≥ 0.11 is reported. After everything is on `PATH`, launch
-`nvim` once so `lazy.nvim` can bootstrap and install the plugins.
+Make sure all the required packages shows a version (proof it has been installed)
 
