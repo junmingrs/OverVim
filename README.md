@@ -15,6 +15,8 @@ Neovim config for Overflow workshop
 | **fd** | Required for find files in `telescope` |
 
 ## Optional Dependency
+| | |
+| --- | --- |
 | **Rust toolchain (`cargo`)** | Provides blink.cmp's Rust fuzzy matcher (`prefer_rust_with_warning`). |
 
 ## Installation (Windows)
@@ -34,7 +36,7 @@ scoop install main/neovim
 ```
 
 ### git
-You should already have git installed
+You should already have git installed. \
 If not, install it from [Git website](https://git-scm.com/install/windows)
 
 ### ripgrep and fd
@@ -97,9 +99,18 @@ tree-sitter --version
 cargo --version
 ```
 
-Make sure all the required packages shows a version (proof it has been installed)
+Make sure all the required packages shows a version (proof it has been installed) \
 Run 
 ```powershell
 git clone https://github.com/junmingrs/OverVim $env:LOCALAPPDATA\nvim
 ```
+
+## Installation (Linux / MacOS)
+
+Install the above packages with your preferred package manager. \
+then run
+```bash
+git clone https://github.com/junmingrs/OverVim ~/.config/nvim
+```
+
 and you're all set!
