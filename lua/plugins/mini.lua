@@ -16,9 +16,10 @@ return {
  ╚═════╝   ╚═══╝  ╚══════╝╚═╝  ╚═╝  ╚═══╝  ╚═╝╚═╝     ╚═╝
  ]],
       items = {
-        { name = "OverMotion", action = "OverMotion",           section = "Custom" },
-        { name = "OverClient", action = "OverClient",           section = "Custom" },
-        { name = "Find File",  action = "Telescope find_files", section = "Custom" },
+        { name = "OverMotion",    action = "OverMotion",                                                             section = "Workshop" },
+        { name = "OverClient",    action = "OverClient",                                                             section = "Workshop" },
+        { name = "Find File",     action = "Telescope find_files",                                                   section = "Workshop" },
+        { name = "Open Activity", action = function() vim.cmd.edit(vim.fn.stdpath("config") .. "/activity.py") end,  section = "Workshop" },
       },
       footer = ""
     })

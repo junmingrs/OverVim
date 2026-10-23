@@ -51,8 +51,6 @@ You should have this installed already for your module
 https://docs.npmjs.com/cli/v12/configuring-npm/install
 ```
 
-// TODO: THIS IS NOT CONFIRMED
-// WINDOWS HAS "Visual Studio Installer which should have gcc"
 ### C compiler (`gcc`/`cc`) + `make` 
 
 ```powershell

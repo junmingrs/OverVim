@@ -1,5 +1,11 @@
 return {
   'nvim-treesitter/nvim-treesitter',
   lazy = false,
-  build = ':TSUpdate'
+  build = ':TSUpdate',
+  config = function()
+    require("nvim-treesitter").install({
+      "lua",
+      "python"
+    })
+  end
 }
