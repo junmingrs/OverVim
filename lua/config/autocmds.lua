@@ -6,7 +6,6 @@ vim.api.nvim_create_autocmd('TextYankPost', {
   end,
 })
 
-
 vim.api.nvim_create_autocmd("FileType", {
   desc = "Disables comment carry forward",
   group = vim.api.nvim_create_augroup("custom-formatting", { clear = true }),
